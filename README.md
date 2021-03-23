@@ -1,6 +1,6 @@
 # Installing APT
 
-Here are several lines you can copy and paste into terminal when installing APT according to the video:
+Here are several lines you can copy and paste into terminal when installing APT according to the video: https://youtu.be/yU04ynNJXS0
 
 
 Verify if Java is installed in Terminal
