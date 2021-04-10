@@ -1,12 +1,18 @@
 # Installing APT
 
-Here are several lines you can copy and paste into terminal when installing APT according to the video: https://youtu.be/yU04ynNJXS0
+Here are several lines you can copy and paste into terminal when installing APT according to the video:
+* How To Install APT macOS using Legacy Java: https://youtu.be/yU04ynNJXS0
+* How To Install APT all macOS: LINK SOON!
 
 ## Step 0. Download APT to the Downloads folder
+
 You can download the from APT website (https://aperturephotometry.org/downloads/).
+
 -or-
+
 You can right click, then select Save target as or Save link as or Download linked file:
-For version 2.8.4: http://web.ipac.caltech.edu/staff/laher/apt/APT_v2.8.4.tar.gz
+
+* For version 2.8.4: http://web.ipac.caltech.edu/staff/laher/apt/APT_v2.8.4.tar.gz
 
 Once you have downloaded the file make sure to place it in the Downloads folder.
 
