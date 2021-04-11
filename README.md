@@ -2,7 +2,7 @@
 
 Here are several lines you can copy and paste into terminal when installing APT according to the video:
 * How To Install APT macOS using Legacy Java: https://youtu.be/yU04ynNJXS0
-* How To Install APT all macOS: LINK SOON!
+* How To Install APT all macOS: https://youtu.be/79Ja3AG8tYI
 
 ## Step 0. Download APT to the Downloads folder
 
