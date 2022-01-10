@@ -119,4 +119,53 @@ Since we are using terminal to run APT, it needs to remain open while you use AP
 1. Close the APT window.
 2. You may now close terminal.
 
+---
+
+# Uninstalling APT
+If you followed the instructions from this guide, then you are running the files directly from the Downloads folder when you run APT.csh in terminal. There is nothing actually distributed in your machine. Uninstalling is deleting the APT files and Cleaning up the config file.
+
+## 1. Delete Files
+To uninstall APT you would just need to delete the folder APT_v2.8.4.
+
+## 2. Clean Config Files
+To clean the `.profile`, `.bash_profile`, or `.zprofile` (depending on the interpreter you are using `bash` or `zsh`) you will need to open the corresponding file and delete the lines we added in Step 3 for your interpreter.  
+
+If you want to clean the configuration file first identify which one you did. For my example, I will use `.zprofile`. You can replace `.zprofile` with `.profile` or `.bash_profile` where ever needed in the following instructions. 
+
+### Peek at the configuration file
+First verify that you actually have the things related to APT by checking the file in terminal by copy and pasting the following:
+
+```
+cat .zprofile
+```
+
+You should see somewhere in the output the following:
+```
+export APT_HOME=~/Downloads/APT_v2.8.4
+export PATH=$PATH:$APT_HOME
+export APT_ARCH=MAC
+```
+### Delete the lines in the config file
+Without using an editor I do not know of an easier way other than doing this step for each line one at a time using the following in terminal and hitting enter between each:
+
+```
+sed -i '' '/export APT_HOME=~\/Downloads\/APT_v2.8.4/d' .zprofile
+```
+
+```
+sed -i '' '/export PATH=$PATH:$APT_HOME/d' .zprofile
+```
+
+```
+sed -i '' '/export APT_ARCH=MAC/d' .zprofile
+```
+
+Then you can check to see if it worked by using:
+
+```
+cat .zprofile
+```
+
+You should no longer see the lines related to APT!
+
 
