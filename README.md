@@ -1,4 +1,6 @@
-# Installing APT
+# Installing Aperture Photometry Tool - APT 🔭
+
+###### Note: These instructions are for Aperture Photometry Tool. As far as I know, this APT does not come with super cow powers.
 
 Here are several lines you can copy and paste into terminal when installing APT according to the video:
 * How To Install APT macOS using Legacy Java: https://youtu.be/yU04ynNJXS0
