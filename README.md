@@ -3,8 +3,8 @@
 ###### Note: These instructions are for Aperture Photometry Tool. As far as I know, this APT does not come with super cow powers.
 
 Here are several lines you can copy and paste into terminal when installing APT according to the video:
-* How To Install APT macOS using Legacy Java: https://youtu.be/yU04ynNJXS0
 * How To Install APT all macOS: https://youtu.be/79Ja3AG8tYI
+* _(Old version)_ How To Install APT macOS using Legacy Java: https://youtu.be/yU04ynNJXS0
 
 ## Step 0. Download APT to the Downloads folder
 
@@ -14,12 +14,15 @@ You can download the from APT website (https://aperturephotometry.org/downloads/
 
 You can right click, then select Save target as or Save link as or Download linked file:
 
+* For version 3.0.2: http://web.ipac.caltech.edu/staff/laher/apt/APT_v3.0.2.tar.gz
 * For version 2.8.4: http://web.ipac.caltech.edu/staff/laher/apt/APT_v2.8.4.tar.gz
 
 Once you have downloaded the file make sure to place it in the Downloads folder.
 
-Open Finder and double click `APT_v2.8.4.tar.gz`. 
-Once you can confirm you have the normal folder named `APT_v2.8.4` delete the file named `APT_v2.8.4.tar.gz`
+>If using version 2.8.4 replace `APT_v3.0.2.tar.gz` with `APT_v2.8.4.tar.gz` in the instructions throughout this guide.
+
+Open Finder and double click `APT_v3.0.2.tar.gz`. 
+Once you can confirm you have the normal folder named `APT_v3.0.2` delete the file named `APT_v3.0.2.tar.gz`
 
 Close Finder
 
@@ -64,7 +67,7 @@ Copy and Paste this into Terminal:
 Now run the following to add APT in your configuration file.
 Copy and Paste this into Terminal:
 
-    echo "export APT_HOME=~/Downloads/APT_v2.8.4
+    echo "export APT_HOME=~/Downloads/APT_v3.0.2
     export PATH=\$PATH:\$APT_HOME
     export APT_ARCH=MAC" >> .zprofile
 
@@ -87,7 +90,7 @@ Copy and Paste this into Terminal:
 If you have or had to make `.bash_profile`
 Copy and Paste this into Terminal:
 
-    echo "export APT_HOME=~/Downloads/APT_v2.8.4
+    echo "export APT_HOME=~/Downloads/APT_v3.0.2
     export PATH=\$PATH:\$APT_HOME
     export APT_ARCH=MAC" >> .bash_profile
 
@@ -95,7 +98,7 @@ Copy and Paste this into Terminal:
 If not and you have `.profile`
 Copy and Paste this into Terminal:
 
-    echo "export APT_HOME=~/Downloads/APT_v2.8.4
+    echo "export APT_HOME=~/Downloads/APT_v3.0.2
     export PATH=\$PATH:\$APT_HOME
     export APT_ARCH=MAC" >> .profile
     
@@ -127,7 +130,7 @@ Since we are using terminal to run APT, it needs to remain open while you use AP
 If you followed the instructions from this guide, then you are running the files directly from the Downloads folder when you run APT.csh in terminal. There is nothing actually distributed in your machine. Uninstalling is deleting the APT files and Cleaning up the config file.
 
 ## 1. Delete Files
-To uninstall APT you would just need to delete the folder APT_v2.8.4.
+To uninstall APT you would just need to delete the folder APT_v3.0.2.
 
 ## 2. Clean Config Files
 To clean the `.profile`, `.bash_profile`, or `.zprofile` (depending on the interpreter you are using `bash` or `zsh`) you will need to open the corresponding file and delete the lines we added in Step 3 for your interpreter.  
@@ -143,7 +146,7 @@ cat .zprofile
 
 You should see somewhere in the output the following:
 ```
-export APT_HOME=~/Downloads/APT_v2.8.4
+export APT_HOME=~/Downloads/APT_v3.0.2
 export PATH=$PATH:$APT_HOME
 export APT_ARCH=MAC
 ```
@@ -151,7 +154,7 @@ export APT_ARCH=MAC
 Without using an editor I do not know of an easier way other than doing this step for each line one at a time using the following in terminal and hitting enter between each:
 
 ```
-sed -i '' '/export APT_HOME=~\/Downloads\/APT_v2.8.4/d' .zprofile
+sed -i '' '/export APT_HOME=~\/Downloads\/APT_v3.0.2/d' .zprofile
 ```
 
 ```
